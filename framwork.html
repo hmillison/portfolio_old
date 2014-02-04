@@ -1,3 +1,8 @@
+<!--	responsivecssgrid - Framework - please fork at https://github.com/fredrikkjellberg/responsivecssgrid
+ 		by Fredrik Kjellberg (http://fredrikk.co/)
+ 		License: http://creativecommons.org/licenses/MIT/	
+ -->
+
 <!DOCTYPE html> 
 <html lang="en"> 
 <head> 
@@ -14,43 +19,171 @@
 	<link rel="apple-touch-icon" href="/images/apple-touch-icon.png" />
 	<script src="modernizr.js"></script>
 		
-	<link rel="stylesheet" href="./css/gridcss.css" type="text/css" media="all">
-    <link rel="stylesheet" href="./css/social.css" type="text/css" media="all">
-    <link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="./css/grid_responsive.css" type="text/css" media="all">
+	<link rel="stylesheet" href="grid_responsive.css" type="text/css" media="all">
 	<!--[if lt IE 9 ]><link rel="stylesheet" href="./css/720_grid.css" type="text/css"><![endif]-->
-	<link rel="stylesheet" href="./css/720_grid.css" type="text/css" media="screen and (min-width: 720px)">
-	<link rel="stylesheet" href="./css/986_grid.css" type="text/css" media="screen and (min-width: 986px)">
-	<link rel="stylesheet" href="./css/1236_grid.css" media="screen and (min-width: 1236px)" >
 
 </head>
 <body>
 
+
 <div class="row">
-	<div class="col_100">
-		<div class="test_color">100%</div>
+	<div id="site_wrapper">
+
+		<div class="row">
+			<div class="col_100">
+				<div class="menu">
+					<div class="left_align">
+						<div class="social_media">
+							<img src="./images/sm_icons/twitter_2.png" alt="twitter" width="15px"/>
+							<img src="./images/sm_icons/email_2.png" alt="twitter" width="15px"/>
+							<img src="./images/sm_icons/skype_2.png" alt="twitter" width="15px"/>
+							<img src="./images/sm_icons/linkedin_2.png" alt="twitter" width="15px"/>
+						</div>
+					</div>
+					<div class="right_align">
+						<a href="#display" onclick="showHideMenu()">
+						<div class="menu_logo">
+							<div class="menu_line"></div>
+							<div class="menu_line"></div>
+							<div class="menu_line"></div>
+						</div>
+
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="row">
+			<div class="col_25">
+				<div class="col_text">
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+					<p>
+				</div>
+			</div>
+
+			<div class="col_25">
+				<div class="col_text">
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+					<p>
+				</div>
+			</div>
+
+			<div class="col_25">
+				<div class="col_text">
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+					<p>
+				</div>
+			</div>
+
+			<div class="col_25">
+				<div class="col_text">
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+					<p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col_33_3">
+				<div class="col_text">
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+					<p>
+				</div>
+			</div>
+
+			<div class="col_33_3">
+				<div class="col_text">
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+					<p>
+				</div>
+			</div>
+
+			<div class="col_33_3">
+				<div class="col_text">
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+					<p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col_50">
+				<div class="col_text">
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+					<p>
+				</div>
+			</div>
+
+			<div class="col_50">
+				<div class="col_text">
+					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. </p>
+					<p>
+				</div>
+			</div>
+		</div>
+
 	</div>
 </div>
 
-<div class="row">
-	<div class="col_50">
-		<div class="test_color">50%</div>
-	</div>
-	<div class="col_50">
-		<div class="test_color">50%</div>
-	</div>
-</div>
+<div id="menu_wrapper"  style="display: none;" class="displaytext_light">
+	<p></p>
 
-<div class="row">
-	<div class="col_33">
-		<div class="test_color">33%</div>
-	</div>
-	<div class="col_33">
-		<div class="test_color">33%</div>
-	</div>
-	<div class="col_33">
-		<div class="test_color">33%</div>
-	</div>
+			<div class="close"> 
+				<a href="#display" onclick="showHideMenu()">&times</a>
+			</div>
+			<p><a href="">CONTACT</a></p>
+			<p><a href="">PORTFOLIO</a></p>
+			<p><a href="">GITHUB</a></p>
+			<p><a href="">PLAYGROUND</a></p>
+			<br>
+			<p></p>
+			<div class"social_media">social median icons<div>
+
+	</div>	
 </div>
+   <script type="text/javascript">
+
+	function showHideText(text_type)
+    {
+    	if (document.getElementById(text_type).style.display=='none')
+    	{
+    		document.getElementById(text_type).style.display='block'
+    	}
+    	else
+    	{
+    		document.getElementById(text_type).style.display='none'
+    	}
+    }
+
+	// hides and shows the menu
+    function showHideMenu()
+    {
+    	if (document.getElementById("menu_wrapper").style.display=='none')
+    	{
+    		document.getElementById("menu_wrapper").style.display='inline'
+    		document.getElementById("site_wrapper").style.width="70%"
+    		document.getElementById("menu_wrapper").style.width="30%"
+    	}
+    	else
+    	{
+    		document.getElementById("menu_wrapper").style.display='none'
+    		document.getElementById("site_wrapper").style.width="100%"
+    		document.getElementById("menu_wrapper").style.width="0%"
+    	}
+    
+	}
+
+	// 			<div class="col_50">
+	//			<div class="test_color"><a href="#display" // onclick="showHideText('menu_wrapper')">Menu</a></div>
+	//		</div>
+
+    </script>
+
+
+
 
 </body> 
 </html>
