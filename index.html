@@ -1,40 +1,39 @@
 <!DOCTYPE html>
-<!-- saved from url=(0019)http://fredrikk.co/ -->
+<!--Design by Henry Millison, based on CSS from frederikk.co and other sources on internet-->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
 	<title>Henry Millison</title>
 	
-	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7; IE=EmulateIE9"> 
 	 
-	
 	<!-- Mobil optimazation -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-	   
-
-	<script type="text/javascript" src="./Fredrik Kjellberg Innovator_files/jquery.min.js"></script>
-	
+		
 	<!-- google fonts -->
 	<link rel="stylesheet" href="./css/grid_responsive.css" type="text/css" media="all">
 
 	<!--[if lt IE 9 ]><link rel="stylesheet" href="./css/720_grid.css" type="text/css"><![endif]-->
 
 <script type="text/javascript">
-  function unhide(divID) {
+  function unhide(divID) 
+  {
     var item = document.getElementById(divID);
-    
-  if (item) {
+    AboutMe.className = 'hidden';
+    Education.className = 'hidden';
+    Work.className = 'hidden';
+    Portfolio.className = 'hidden';
+    Contact.className = 'hidden';
+ 	intro.className = 'hidden';
+ 	more.className = 'hidden';
+
+  if (item)
+   {
       item.className=(item.className=='hidden')?'unhidden':'hidden';
     }
-	if(divID != 'more')
-	{
-       intro.className = 'hidden';
-	}
-
+  return false; 
   }
+
 </script>
-
-
-<body style="background-color:#3E97D1">
+<body>
 
 
 <div class="row">
@@ -43,10 +42,10 @@
 				<div class="menu">
 					<div class="left_align">
 						<div class="social_media">
-							<a href="mailto:hlmilli@umich.com?subject=HeyThere!"><img src="./images/email_2.png" alt="email" width="15px"></a>
-							<a href="skype:USERNAME?call"><img src="./images/skype_2.png" alt="skype" width="15px"></a>
-							<a href="www.linkedin.com/pub/henry-millison/54/a26/278/" target="_blank"><img src="./images/linkedin_2.png" alt="linkedin" width="15px"></a>
-							<a href="https://github.com/hmillison/" target="_blank"><img src="./images/github.png" alt="linkedin" width="15px"></a>
+							<a href="mailto:hlmilli@umich.com?subject=HeyThere!"><img src="./images/email_2.png" alt="email" width="15"></a>
+							<a href="skype:USERNAME?call"><img src="./images/skype_2.png" alt="skype" width="15"></a>
+							<a href="www.linkedin.com/pub/henry-millison/54/a26/278/" target="_blank"><img src="./images/linkedin_2.png" alt="linkedin" width="15"></a>
+							<a href="https://github.com/hmillison/" target="_blank"><img src="./images/github.png" alt="github" width="15"></a>
 
 						</div>
 					</div>
@@ -55,36 +54,39 @@
 			</div>
 
 			<div class="col_100">
-						<a href="#display" onclick="javascript:unhide('more');"><img class="expandOpen" src="./images/topcirc.png" width="140px"></a>
+						<a href="#display" onclick="javascript:unhide('more');"><img class="expandOpen" src="./images/topcirc.png" alt="Picture" width="140"></a>
 				<h3 style="color: white">Henry Millison</h3>
 				<h5></h5>
 			<br>	
 			</div>
 
-		<div id="more" class="hidden">			
+		
+
+<div id ='cssmenu'>
+<ul>
+		<li>
+		<a href="#AboutMe" title="More About Me" onclick="javascript:unhide('AboutMe');"><span><strong>About</strong></span></a>
+		</li>
+		<li>	       		
+		<a href="#Work" onclick="javascript:unhide('Work');"><span><strong>Work Experience</strong></span></a>
+		</li>
+		<li>	       		
+		<a href="#Portfolio" onclick="javascript:unhide('Portfolio');"><span><strong>Portfolio</strong></span></a>
+		</li>
+		<li>	       		
+		<a href="#Contact" onclick="javascript:unhide('Contact');"><span><strong>Contact</strong></span></a>
+		</li>
+</ul>
+</div>
+<div class = "main">
+<div id="intro"><center></center></div>
+<div id="more" class="hidden">			
 				HELLO MY NAME IS HENRY I LOVE YOU SO MUCH
 				<br />
 				<br />
 				<br />
 				<br />
 		</div>
-
-<div class="large">
-<div class ="sidebar" >
-
-			       		<div class="tab" >
-			       			<a href="#AboutMe" title="More About Me" onclick="javascript:unhide('AboutMe');"><h4><strong>About</strong></h4</a></a>
-			       		</div>
-
-			       		<div class="tab">
-			       			<a href="#Education" onclick="javascript:unhide('Education');"><h4><strong>Education</strong></h4></a>
-			       		</div>
-						<div class="tab" >
-			       			<a href="#Work" onclick="javascript:unhide('Work');"><h4><strong>Work Experience</strong></h4></a>
-			       		</div>
-</div>
-<div class = "main">
-<div id="intro"> WELCOME! <br /> use the sidebar on the left to learn more...</div>
 <div id="AboutMe" class="hidden">
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet quam in ligula lacinia sollicitudin. Quisque non lorem ut ligula vehicula gravida. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam molestie neque id rutrum lacinia. Curabitur accumsan sollicitudin imperdiet. Phasellus felis nisi, tincidunt quis risus nec, pulvinar aliquam massa. Donec fringilla egestas nunc in tristique. Maecenas ornare mi laoreet, elementum orci ut, feugiat justo. Phasellus ut nisl nec ante ornare accumsan. Phasellus malesuada placerat lacinia. Maecenas mauris est, adipiscing sit amet volutpat ut, sollicitudin a augue. Proin hendrerit, mi facilisis sollicitudin convallis, ligula augue suscipit velit, a congue magna est non purus. Vestibulum porta vel nunc in pretium. Vestibulum gravida accumsan placerat.
 
@@ -106,13 +108,23 @@ Vivamus varius lectus mauris, at cursus augue tempor in. Curabitur eget lacinia 
 
 Suspendisse hendrerit at nulla eu luctus. Nullam facilisis posuere magna. Donec eget justo neque. Fusce vitae orci vitae mi accumsan aliquam. Curabitur placerat nisl quis augue suscipit viverra. Vestibulum quis consequat metus. Maecenas vel bibendum nibh.
 </div>
-</div>
-</div>
-				</div><!-- /. end of hidden -->
-		</div><!-- /.end of case  -->
-	</div>
-</div>
+<div id="Portfolio" class="hidden">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet quam in ligula lacinia sollicitudin. Quisque non lorem ut ligula vehicula gravida. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam molestie neque id rutrum lacinia. Curabitur accumsan sollicitudin imperdiet. Phasellus felis nisi, tincidunt quis risus nec, pulvinar aliquam massa. Donec fringilla egestas nunc in tristique. Maecenas ornare mi laoreet, elementum orci ut, feugiat justo. Phasellus ut nisl nec ante ornare accumsan. Phasellus malesuada placerat lacinia. Maecenas mauris est, adipiscing sit amet volutpat ut, sollicitudin a augue. Proin hendrerit, mi facilisis sollicitudin convallis, ligula augue suscipit velit, a congue magna est non purus. Vestibulum porta vel nunc in pretium. Vestibulum gravida accumsan placerat.
 
+Vivamus varius lectus mauris, at cursus augue tempor in. Curabitur eget lacinia risus. Maecenas fringilla hendrerit tempor. Nam elementum dui nec felis consectetur imperdiet. Proin vitae viverra risus, in varius quam. Duis massa massa, placerat lacinia cursus quis, ullamcorper ut diam. Praesent tortor enim, bibendum a nibh vitae, iaculis fringilla tellus. Nam vel consequat nunc. Nunc molestie enim a dolor vestibulum elementum. Etiam mollis id dolor eu aliquet. Sed vulputate arcu quis pretium cursus.
+
+Suspendisse hendrerit at nulla eu luctus. Nullam facilisis posuere magna. Donec eget justo neque. Fusce vitae orci vitae mi accumsan aliquam. Curabitur placerat nisl quis augue suscipit viverra. Vestibulum quis consequat metus. Maecenas vel bibendum nibh.
+</div>
+<div id="Contact" class="hidden">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet quam in ligula lacinia sollicitudin. Quisque non lorem ut ligula vehicula gravida. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam molestie neque id rutrum lacinia. Curabitur accumsan sollicitudin imperdiet. Phasellus felis nisi, tincidunt quis risus nec, pulvinar aliquam massa. Donec fringilla egestas nunc in tristique. Maecenas ornare mi laoreet, elementum orci ut, feugiat justo. Phasellus ut nisl nec ante ornare accumsan. Phasellus malesuada placerat lacinia. Maecenas mauris est, adipiscing sit amet volutpat ut, sollicitudin a augue. Proin hendrerit, mi facilisis sollicitudin convallis, ligula augue suscipit velit, a congue magna est non purus. Vestibulum porta vel nunc in pretium. Vestibulum gravida accumsan placerat.
+
+Vivamus varius lectus mauris, at cursus augue tempor in. Curabitur eget lacinia risus. Maecenas fringilla hendrerit tempor. Nam elementum dui nec felis consectetur imperdiet. Proin vitae viverra risus, in varius quam. Duis massa massa, placerat lacinia cursus quis, ullamcorper ut diam. Praesent tortor enim, bibendum a nibh vitae, iaculis fringilla tellus. Nam vel consequat nunc. Nunc molestie enim a dolor vestibulum elementum. Etiam mollis id dolor eu aliquet. Sed vulputate arcu quis pretium cursus.
+
+Suspendisse hendrerit at nulla eu luctus. Nullam facilisis posuere magna. Donec eget justo neque. Fusce vitae orci vitae mi accumsan aliquam. Curabitur placerat nisl quis augue suscipit viverra. Vestibulum quis consequat metus. Maecenas vel bibendum nibh.
+</div>
+</div>
+</div>
+</div>
 
 			
 
