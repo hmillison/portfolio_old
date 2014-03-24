@@ -30,11 +30,13 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
+@import url(http://fonts.googleapis.com/css?family=Metrophobic);
+
 body {
-	font-family: 'Exo 2', sans-serif;
+font-family: 'Metrophobic', sans-serif;
 	line-height: 1.5em;
 	color: grey;
-	overflow-y: scroll;
 	background-color:#3E97D1;
 }
 ol, ul {
@@ -51,7 +53,6 @@ q:before, q:after {
 }
 code {
 	background-color: #f4f4f4;
-	font-family: Menlo, 'Panic Sans', monospace;
 	font-size: 0.875em;
 }
 table {
@@ -85,6 +86,8 @@ h3 {
 }
 
 h4 {
+font-family: 'Metrophobic', sans-serif;
+
 	font-size: 1.25em;
 }
 
@@ -117,12 +120,15 @@ img {
     to {opacity: 1.0;}
     }
 
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:700);
+
 #cssmenu {
   box-shadow: 10px 10px 10px #888888;
-  background: #FF9D73;
-  width: auto;
+  background: #FFBB40;
+  width: 100%;
+  text-align:center;
+
 }
+
 #cssmenu ul {
   list-style: none;
   margin: 0;
@@ -130,6 +136,10 @@ img {
   line-height: 1;
   display: block;
   zoom: 1;
+  white-space:nowrap
+  text-align:center;
+ 
+
 }
 #cssmenu ul:after {
   content: ' ';
@@ -141,31 +151,46 @@ img {
 }
 #cssmenu ul li {
   float: left;
-  display: block;
-  padding: 0;
+  padding: 0; 
+}
+
+#cssmenu ul
+{
+display:inline-block;
+  padding-bottom: 10px;
+
+
+
 }
 #cssmenu ul li a {
   color: #ffffff;
   text-decoration: none;
-  display: block;
-  padding: 15px 45px;
+  padding: 15px 25px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   font-size: 18px;
   position: relative;
-  -webkit-transition: color .25s;
-  -moz-transition: color .25s;
-  -ms-transition: color .25s;
-  -o-transition: color .25s;
-  transition: color .25s;
-}
-#cssmenu ul li a:hover {
-  color: #333333;
-}
-#cssmenu ul li a:hover:before {
-  width: 100%;
-}
+  -webkit-transition-property:background-color;
+-webkit-transition-duration:3s;
+-webkit-transition-timing-function:linear;
+-webkit-transition-delay:0s;
+   transition-property: background-color;
+transition-duration: 3s;
+transition-timing-function: linear;
+transition-delay: 0s;
+
+
+  }
+
+#top { 
+margin-left:auto;
+margin-right:auto;
+-webkit-transition: all .2s ease-in-out;
+width: 140px;
+ }
+#top:hover { 
+-webkit-transform: scale(1.1); }
 
 #cssmenu ul li a:before {
   content: '';
@@ -176,12 +201,18 @@ img {
   height: 3px;
   width: 0;
   background: #333333;
-  -webkit-transition: width .25s;
-  -moz-transition: width .25s;
-  -ms-transition: width .25s;
-  -o-transition: width .25s;
-  transition: width .25s;
+
+  
 }
+
+#cssmenu ul li a:hover{
+background-color:#FF7640;
+opacity:0.6;
+color:#333333;
+}
+
+
+
 #cssmenu ul li.last > a:after,
 #cssmenu ul li:last-child > a:after {
   display: none;
@@ -217,25 +248,16 @@ img {
   }
 }
 
-.sidebar{
-float:left;
-width: 20%;
-height: 500px;
-border-color: black;
-border:2px solid;
-background-color:#FF8E00;
-border-radius:25px;
-}
 
 .main{
+margin-right:20%;
 float:right;
 padding-top: 10px;
-
-width: 100%;
+font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+width: 60%;
 
 }
-
-
 
 
 .hidden { 
@@ -251,20 +273,17 @@ height:70%;
 
 .unhidden { 
 display: block; 
+-webkit-animation-name:target;
+-webkit-animation-duration:3s;
+-webkit-animation-iteration-count:1;
+-webkit-animation-direction:linear;
 
 }
 
-#AboutMe:target, #Education:target, #Work:target, #Portfolio:target, #Contact:target
-{
-    -webkit-animation-name:target;
-    -webkit-animation-duration:3s;
-    -webkit-animation-iteration-count:1;
-    -webkit-animation-direction:linear;
-}
 
 
 
-#AboutMe, #Education, #Work, #Portfolio, #Contact
+#Display, #AboutMe, #Education, #Work, #Portfolio, #Contact
 {
 color:white;
 height:500px;
@@ -287,7 +306,6 @@ text-align: center;
 /* displaytext */
 
 .displaytext_dark {
-	ffont-family: 'Exo 2', sans-serif;
 	font-weight: 200;
 	text-align: center;
 	color: grey;
@@ -295,7 +313,6 @@ text-align: center;
 }
 
 .displaytext_light {
-	font-family: 'Exo 2', sans-serif;
 	font-weight: 200;
 	text-align: center;
 	color: white;
