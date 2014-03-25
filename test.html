@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <!--Design by Henry Millison, based on CSS from frederikk.co and other sources on internet-->
 <html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
-	<title>Henry Millison</title>
-	
-	 
-	<!-- Mobil optimazation -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Henry Millison</title>
+  
+   
+  <!-- Mobil optimazation -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		
-	<!-- google fonts -->
-	<link rel="stylesheet" href="./css/grid_responsive.css" type="text/css" media="all">
+    
+  <!-- google fonts -->
+  <link rel="stylesheet" href="./css/grid_responsive.css" type="text/css" media="all">
 
-	<!--[if lt IE 9 ]><link rel="stylesheet" href="./css/720_grid.css" type="text/css"><![endif]-->
+  <!--[if lt IE 9 ]><link rel="stylesheet" href="./css/720_grid.css" type="text/css"><![endif]-->
 
 <script type="text/javascript">
 function unhide(divID) 
@@ -22,8 +22,8 @@ function unhide(divID)
     Work.className = 'hidden';
     Portfolio.className = 'hidden';
     Contact.className = 'hidden';
- 	intro.className = 'hidden';
- 	more.className = 'hidden';
+   intro.className = 'hidden';
+   more.className = 'hidden';
 
   if (item)
    {
@@ -31,6 +31,11 @@ function unhide(divID)
     }
     
   }
+  
+function Color(id,col)
+{
+ document.getElementById(id).style.backgroundColor=col;;
+}
   
 
 </script>
@@ -40,82 +45,90 @@ function unhide(divID)
 
 
 <div class="row">
-	<div id="site_wrapper">
-			<div class="col_100_menu">
-				<div class="menu">
-					<div class="left_align">
-						<div class="social_media">
-							<a href="mailto:hmillison@gmail.com?subject=HeyThere!"><img src="./images/email_2.png" alt="email" width="15"></a>
-							<a href="skype:USERNAME?hmillison@gmail.com"><img src="./images/skype_2.png" alt="skype" width="15"></a>
-							<a href="www.linkedin.com/pub/henry-millison/54/a26/278/" target="_blank"><img src="./images/linkedin_2.png" alt="linkedin" width="15"></a>
-							<a href="https://github.com/hmillison/" target="_blank"><img src="./images/github.png" alt="github" width="15"></a>
+  <div id="site_wrapper">
+      <div class="col_100_menu">
+        <div class="menu">
+          <div class="left_align">
+            <div class="social_media">
+              <a href="mailto:hmillison@gmail.com?subject=HeyThere!"><img src="./images/email_2.png" alt="email" width="15"></a>
+              <a href="skype:USERNAME?hmillison@gmail.com"><img src="./images/skype_2.png" alt="skype" width="15"></a>
+              <a href="http://www.linkedin.com/pub/henry-millison/54/a26/278/" target="_blank"><img src="./images/linkedin_2.png" alt="linkedin" width="15"></a>
+              <a href="https://github.com/hmillison/" target="_blank"><img src="./images/github.png" alt="github" width="15"></a>
 
-						</div>
-					</div>
-					
-				</div>
-			</div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
 
-			<div class="col_100">
-			<div id = "top">
-						<a href="#display" onclick="javascript:unhide('more');"><img class="expandOpen" src="./images/topcirc.png" alt="Picture" width="140"></a>
-			<br>	
-			</div>
-							<h3 style="color: white; ">Henry Millison</h3>
-							<br />
-							<br />
+      <div class="col_100">
+      <div id = "top">
+            <a href="#display" onclick="javascript:unhide('more'); javascript:Color('cssmenu','#FFDA00');"><img class="expandOpen" src="./images/topcirc.png" alt="Picture" width="140"></a>
+      <br>  
+      </div>
+              <h3 style="color: white; ">Henry Millison</h3>
+              <br />
+              <br />
 
-			</div>
+      </div>
 
-		
+    
 <div id ='cssmenu'>
 <ul>
-		<li>
-		<a href="#display" title="More About Me" onclick="javascript:unhide('AboutMe'); "><span><strong>About</strong></span></a>
-		</li>
-		<li>	       		
-		<a href="#display" onclick="javascript:unhide('Work');"><span><strong>Experience</strong></span></a>
-		</li>
-		<li>	       		
-		<a href="#display" onclick="javascript:unhide('Portfolio');"><span><strong>Portfolio</strong></span></a>
-		</li>
-		<li>	       		
-		<a href="#display" onclick="javascript:unhide('Contact');"><span><strong>Contact</strong></span></a>
-		</li>
+    <li>
+    <a href="#display" title="More About Me" onclick="javascript:unhide('AboutMe'); "><span><strong>About</strong></span></a>
+    </li>
+    <li>             
+    <a href="#display" onclick="javascript:unhide('Work');"><span><strong>Experience</strong></span></a>
+    </li>
+    <li>             
+    <a href="#display" onclick="javascript:unhide('Portfolio');"><span><strong>Portfolio</strong></span></a>
+    </li>
+    <li>             
+    <a href="#display" onclick="javascript:unhide('Contact');"><span><strong>Contact</strong></span></a>
+    </li>
 </ul>
 </div>
 <div class = "main">
 <div id="intro"><center></center></div>
-<div id="more" class="hidden">			
-				HELLO MY NAME IS HENRY I LOVE YOU SO MUCH
-				<br />
-				<br />
-				<br />
-				<br />
-		</div>
+<div id="more" class="hidden">      
+        HELLO MY NAME IS HENRY... WOOO
+        <br />
+        <br />
+        <br />
+        <br />
+    </div>
 <div id="AboutMe" class="hidden">
 <p>I am a 21 year-old studying Social Computing at the University of Michigan. Through my studies, work and other projects I 
 have learned an array of technology skills. Fro
 </p>
 </div>
 <div id="Work" class="hidden">
-Summer 2013: Intern, SCDM <br />
+<div class="intern1">
+<div class="col_100">
+<hi>Summer 2013: Intern, SCDM </hi><br />
 Project Management between developers in Armenia and employees in Germany, transitioned codebase and employees to new project management system <br />
 Languages: Java<br />
 Unfuddle, Git<br />
-<br /><br />
-
-Summer 2012: Intern, Social Media Link<br />
+</div>
+</div>
+<div class="intern2">
+<div class="col_100">
+<hi>Summer 2012: Web Production Intern, Social Media Link</hi><br />
 Web Design, Email Marketing, Design<br />
 Languages: HTML, CSS, SQL, PHP<br />
 Photoshop, ColdFusion, Dreamweaver, Visio, Google Analytics, Vertical Response
-<br /><br /><br />
-Selected Coursework:<br />
+</div>
+</div>
+<div class="intern3">
+<div class="col_100">
+<hi>Selected Coursework:</hi><br />
 SI 301, Winter 2014 - Models of Social Information Processing - Python, Twitter API, Graph Theory, Game Theory<br />
 SI 422, Winter 2014 - Evaluations of Systems & Services - Performed usability tests of software, conducted user research, learned UX principles<br />
 EECS 280, Winter 2013 - Programming and Data Structures - C++<br />
-SI 339, Fall 2012 - Design of Complex Websites - Python, Javascript, HTML, CSS + Google App Engine<br />
-
+SI 339, Fall 2012 - Design of Complex Websites - Python, Javascript, HTML, CSS, Google App Engine<br />
+</div>
+</div>
 </div>
 <div id="Portfolio" class="hidden">
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet quam in ligula lacinia sollicitudin. Quisque non lorem ut ligula vehicula gravida. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam molestie neque id rutrum lacinia. Curabitur accumsan sollicitudin imperdiet. Phasellus felis nisi, tincidunt quis risus nec, pulvinar aliquam massa. Donec fringilla egestas nunc in tristique. Maecenas ornare mi laoreet, elementum orci ut, feugiat justo. Phasellus ut nisl nec ante ornare accumsan. Phasellus malesuada placerat lacinia. Maecenas mauris est, adipiscing sit amet volutpat ut, sollicitudin a augue. Proin hendrerit, mi facilisis sollicitudin convallis, ligula augue suscipit velit, a congue magna est non purus. Vestibulum porta vel nunc in pretium. Vestibulum gravida accumsan placerat.
@@ -135,14 +148,14 @@ Suspendisse hendrerit at nulla eu luctus. Nullam facilisis posuere magna. Donec 
 </div>
 </div>
 
-			
+      
 
-				<br>
-				<br>
-				<br>
-				<br>
+        <br>
+        <br>
+        <br>
+        <br>
 
-		
+    
 
 
  
