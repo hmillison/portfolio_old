@@ -318,6 +318,35 @@ line-height:120%;
   width: 175px;
   margin: 8px;
   display: inline-block;
+  border: 3px solid #ddd;
+  border-radius:40px;
+  cursor:pointer;
+}
+
+.front, .back{
+  position:absolute;
+  height:inherit;
+  width:inherit;
+  border-radius:35px;
+}
+
+.back{
+  opacity:0;
+  background-color:rgba(0,0,0,.7);
+  -webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.back:hover{
+  opacity:1;
+}
+
+.back-text{
+  text-align:center;
+  color:#ddd;
+  margin: 10px 10px 0px 10px;
+  font-weight: 500;
 }
 
 .grid .item .image{
@@ -328,7 +357,6 @@ line-height:120%;
 
 .grid img{
   height:175px;
-  border: 3px solid #ddd;
   border-radius:40px;
 }
 
