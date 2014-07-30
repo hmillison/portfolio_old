@@ -1,7 +1,5 @@
-/*  responsivecssgrid - Framework - please fork at https://github.com/fredrikkjellberg/responsivecssgrid
- *  by Fredrik Kjellberg (http://fredrikk.co/)
- *  License: http://creativecommons.org/licenses/MIT/  */
- 
+/*  CSS for henrymillison.com - initial inspiration from frederikk.co's responsive grid */
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -12,8 +10,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
   margin: 0;
@@ -25,7 +23,7 @@ time, mark, audio, video {
 }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
 }
@@ -37,29 +35,14 @@ footer, header, hgroup, menu, nav, section {
 body {
   font-family: 'Lato', sans-serif !important;
   line-height: 1.5em;
-  color: grey;
-  background-color:#3E97D1;
+  color: black;
+  background-color:#fff;
 }
 ol, ul {
   list-style: square;
   margin: 0 0 0.5em;
 }
-blockquote, q {
-  quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-code {
-  background-color: #f4f4f4;
-  font-size: 0.875em;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
+
 strong {
   font-weight: bold;
 }
@@ -84,6 +67,7 @@ h2 {
 
 h3 {
   font-size: 1.5em;
+  text-align: center;
 }
 
 h4 {
@@ -105,7 +89,7 @@ a, a:link, a:visited {
   color: rgba(70,70,70,0.8);
 }
 .menu_item a, .menu_item a:link, .menu_item a:visited {
-  color:white;
+  color:black;
 }
 
 .menu_item a:hover, .menu_item a:active {
@@ -121,12 +105,13 @@ img {
     to {opacity: 1.0;}
     }
 
+/* Navbar/Header */
 
 #header{
 float: left;
-border-right:5px solid rgba(0,0,0,0.3);     
+border-right:5px solid rgba(0,0,0,0.3);
 width: 20%;
-background: #FFBB40;
+background: #ddd;
     position:absolute;
 height: 100%;
 }
@@ -140,6 +125,7 @@ margin-bottom: 20px;
 font-size:12px;
 margin-bottom:20px;
 font-style:italic;
+color:black;
 }
 
 #cssmenu {
@@ -157,7 +143,7 @@ font-style:italic;
   zoom: 1;
   white-space:nowrap
   text-align:center;
- 
+
 
 }
 #cssmenu ul:after {
@@ -169,7 +155,7 @@ font-style:italic;
   visibility: hidden;
 }
 #cssmenu ul li {
-  margin-bottom: 30px; 
+  margin-bottom: 30px;
 }
 
 #cssmenu ul
@@ -181,7 +167,6 @@ display:inline-block;
 
 }
 #cssmenu ul li a {
-  color: #ffffff;
   text-decoration: none;
   padding: 10px 10px 10px;
   margin: 5px;
@@ -213,7 +198,7 @@ transition-delay: 0s;
   width: 0;
   background: #333333;
 
-  
+
 }
 
 #cssmenu ul li a:hover{
@@ -224,7 +209,35 @@ color:#333333;
 }
 
 
+#picture {
+margin-left:auto;
+margin-right:auto;
+-webkit-transition: all .2s ease-in-out;
+width: 140px;
+ }
 
+#picture:hover {
+-webkit-transform: scale(1.1); }
+
+
+.social_media{
+text-align: center;
+}
+.social_media .fa{
+  margin-left: auto;
+  margin-right: auto;
+  display: inline;
+  height:30px;
+  padding-right:5px;
+}
+
+.social_media .fa:hover {
+  opacity: 0.8;
+
+}
+
+
+/* General Page Styles */
 .main{
 float: right;
 width: 80%;
@@ -232,20 +245,8 @@ font-weight: 700;
 
 }
 
-
-#picture { 
-margin-left:auto;
-margin-right:auto;
--webkit-transition: all .2s ease-in-out;
-width: 140px;
- }
-
-#picture:hover { 
--webkit-transform: scale(1.1); }
-
-
-.hidden { 
-display: none; 
+.hidden {
+display: none !important;
 
 }
 
@@ -255,8 +256,8 @@ height:70%;
 }
 
 
-.unhidden { 
-display: block; 
+.unhidden {
+display: block;
 -webkit-animation-name:target;
 -webkit-animation-duration:3s;
 -webkit-animation-iteration-count:1;
@@ -265,122 +266,123 @@ display: block;
 }
 
 #intro{
-color:white;
 font-style: strong;
 font-size: 2em;
 }
 
 #more
 {
-color:white;
 text-align: center;
 }
 
-#Work
-{
 
-color:white;
+#Portfolio{
+margin-left:10px;
+font-size:20px;
 }
 
-
+/* About Me */
 #AboutMe{
-color:white;
 width:90%;
 
-  margin-left:10px;
-  margin-top:10px;
+  margin-left:20px;
+  margin-top:20px;
     overflow: hidden;
 }
 
-#Contact{
-color:white;
-width:100%;
-}
+
 #AboutMe p{
-margin-top:10px;
-font-size:20px;
+font-size:18px;
 font-weight: 500;
-line-height:120%; 
+line-height:120%;
     text-align:left;
 
 }
 
-#Portfolio{
-color:white;
-font-size:20px;
+
+/* Work Page */
+#Work
+{
+  text-align: left;
+  display: block;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
-.experience
-{
-  overflow: hidden;
-  font-weight: 100;
+#Work .grid{
+  width: 100%;
+}
+
+.grid .item{
+  height: 175px;
+  width: 175px;
+  margin: 8px;
+  display: inline-block;
+}
+
+.grid .item .image{
+  width: 100%;
+  display: block;
+  height: 100%;
+}
+
+.grid img{
+  height:175px;
+  border: 3px solid #ddd;
+  border-radius:40px;
+}
+
+.grid .item .title{
   text-align: center;
-  border: 1px solid #ddd;
-  -webkit-border-radius: 25px;
-  -moz-border-radius: 25px;
-  border-radius: 25px;
-  margin-left:10px;
-  margin-right:10px;
-  margin-top:10px;
-  margin-bottom:10px;
-  padding-top:15px;
-}
-
-#intern1
-{
-  background-color: #FF7373;
- 
-}
-#intern2
-{
-  background-color: #61B4CF;
-
-}
-#intern3
-{
-  background-color: #5ED2B8;
-
-}
-
-#intern4
-{
-  background-color: #966BD6;
-
+font-family: 'Lato', sans-serif;
+font-size: 14px;
+font-weight: 200;
+width: 100%;
+height: 100px;
+color:black;
+padding: 10px 10px 0px 10px;
+box-sizing: border-box;
+-moz-box-sizing: border-box;
+background-color: #ddd;
 }
 
 
 
-/* Contact Form */
+/* Contact Page and Form */
+#Contact{
+width:100%;
+}
+
 #contact-form {
     width:465px;
     padding:20px;
-    margin: 10px auto;    
-   
+    margin: 0px auto;
+
     position:relative;
 }
- 
+
 #contact-form h1 {
     font-size:42px;
     text-align:center;
 }
- 
+
 #contact-form h2 {
     margin-bottom:15px;
     font-style:italic;
     font-weight:normal;
 }
- 
-#contact-form input, 
-#contact-form select, 
-#contact-form textarea, 
+
+#contact-form input,
+#contact-form select,
+#contact-form textarea,
 #contact-form label {
     font-size:15px;
     margin-bottom:2px;
-   
+
 }
- 
-#contact-form input, 
-#contact-form select, 
+
+#contact-form input,
+#contact-form select,
 #contact-form textarea {
     width:450px;
     border: 1px solid #CEE1E8;
@@ -390,28 +392,28 @@ font-size:20px;
     margin-bottom:20px;
     padding:4px;
 }
- 
-#contact-form input:focus, 
-#contact-form select:focus, 
+
+#contact-form input:focus,
+#contact-form select:focus,
 #contact-form textarea:focus {
     border: 1px solid #AFCDD8;
     background-color: #EBF2F4;
 }
- 
+
 #contact-form textarea {
     height:150px;
     resize: none;
 }
- 
+
 #contact-form label {
     display:block;
 }
- 
+
 #contact-form .required {
     font-weight:bold;
-    color:#F00;    
+    color:#F00;
 }
- 
+
 #contact-form #submit_button {
     width: 100px;
     background-color:#333;
@@ -427,17 +429,17 @@ font-size:20px;
     -moz-border-radius:8px;
     border-radius:8px;
 }
- 
+
 #contact-form #submit_button:hover {
     background-color: #A6CFDD;
     cursor:pointer;
 }
- 
+
 #contact-form #submit_button:active {
     position:relative;
     top:1px;
 }
- 
+
 
 
 #error {
@@ -451,24 +453,24 @@ font-size:20px;
     border-radius:8px;
     background:#FFE6E6 no-repeat 405px center;
 }
- 
+
 #error li {
     padding:2px;
-    list-style:none;    
+    list-style:none;
 }
- 
+
 #error li:before {
-    content: ' - ';    
+    content: ' - ';
 }
- 
+
 #error #info {
     font-weight:bold;
 }
- 
+
 #error #info:before {
-    content: '';    
+    content: '';
 }
- 
+
 #success {
     border:solid 1px #83D186;
     padding:25px 10px;
@@ -481,15 +483,15 @@ font-size:20px;
     background:#D3EDD3 no-repeat 405px center;
     font-weight:bold;
 }
- 
+
 #errors.visible, #success.visible {
-    display:block;    
+    display:block;
 }
- 
+
 #req-field-desc {
     font-style:italic;
 }
- 
+
 /* Remove box shadow firefox, chrome and opera put around required fields. It looks rubbish. */
 input:required, textarea:required {
     -moz-box-shadow:none;
@@ -497,216 +499,23 @@ input:required, textarea:required {
     -o-box-shadow:none;
     box-shadow:none;
 }
- 
+
 /* Normalize placeholder styles */
- 
+
 /* chrome, safari */
 ::-webkit-input-placeholder {
     color:#CCC;
     font-style:italic;
 }
- 
+
 /* mozilla */
 input:-moz-placeholder, textarea:-moz-placeholder {
     color:#CCC;
     font-style:italic;
 }
- 
+
 /* ie (faux placeholder) */
-input.placeholder-text, textarea.placeholder-text  { 
+input.placeholder-text, textarea.placeholder-text  {
     color:#CCC;
     font-style:italic;
-}
-
-
-/* displaytext */
-
-.displaytext_dark {
-  font-weight: 200;
-  text-align: center;
-  color: grey;
-  opacity: 1;
-}
-
-.displaytext_light {
-  font-weight: 200;
-  text-align: center;
-  color: white;
-  opacity: 1;
-}
-
-.menu {
-  height: 50px;
-}
-
-.menu_logo {
-  width: 20px;
-  height: auto;
-  display: block;
-  float:left;
-}
-
-.menu_line {
-  height: 3px;
-  margin-bottom: 4px;
-  width: 20px;
-  background-color: rgba(30,30,30,1);
-}
-
-.menu_line:hover {
-  opacity: 0.8;
-}
-
-.left_align {
-  float: left;
-  padding-left: 20px;
-  padding-top: 17px;
-}
-
-.social_media{
-text-align: center;
-}
-.social_media img{
-	margin-left: auto;
-	margin-right: auto;
-	display: inline;
-	width:15%;
-	padding-right:5px;
-}
-
-.social_media img:hover {
-  opacity: 0.8;
-
-}
-
-.menu_close {
-  height: 50px;
-  float:right;
-}
-
-.close a {
-  font-size: 2em;
-  padding-right: 20px;
-  color: white;
-}
-.line {
-  padding-right: 10%;
-  padding-left: 10%;
-  float:center;
-  width: 50%;
-  height: 1px;
-  border-bottom: 1px solid white;
-}
-
-.right_align {
-  float:right;
-  padding-right: 20px;
-  padding-top: 15px;
-  display: inline !important;
-}
-
-#menu_wrapper {
-  width: 0%;
-    height: 1200px;
-    float: left;
-    display: inline;
-     font-weight: 300;
-     position: fixed;
-
-  background-color: rgba(30,30,30,1);
-  box-shadow: inset 10px 0px 20px -10px rgba(0,0,0,0.7);
-    -webkit-transition: all 1s ease;
-    -moz-transition:    all 1s ease;
-    -o-transition:      all 1s ease;
-}
-
-#site_wrapper {
-  width: 100%;
-    height: auto;
-    float: left;
-    display: inline;
-
-    -webkit-transition: all 1s ease;
-    -moz-transition:    all 1s ease;
-    -o-transition:      all 1s ease; 
-}
-
-.col_pix_fill_background {
-  width: 100%;
-  background: url(images/bg.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  float: left;
-}
-
-.col_text {
-  /* padding only for text*/
-  width: 80%;
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
-.col_pix {
-  width: 80%;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 5%;
-  padding bottom: 5%;
-}
-
-/* colums */
-/* 1 out of 1*/
-.col_100_menu {
-    width: 100%;
-    height: auto;
-    float: left;
-    display: inline;
-    font-weight: 300;
-}
-
-.menu_item {
-  padding-left:30%;
-  text-align: left;
-}
-/* 1 out of 1*/
-.col_100 {
-    width: 100%;
-    height: auto;
-    float: left;
-    display: inline;
-    text-align: center; 
-    
-}
-
-
-.col_100_round {
-    width: 100%;
-    height: auto;
-    float: left;
-    display: inline;
-    text-align: center; 
-    
-}
-
-
-.footer p {
-  color: #666;
-  text-align: center;
-  max-width: none;
-}
-
-.wrapper {
-  padding-left: 3%;
-  max-width: 95%;
-  padding-right: 30%;
-}
-
-.portfolio-wrapper {
-    width: 400px;
-}
-
-.menu-wrapper {
-  max-width: 10%;
 }
