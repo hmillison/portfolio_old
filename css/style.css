@@ -36,7 +36,7 @@ body {
   font-family: 'Lato', sans-serif !important;
   line-height: 1.5em;
   color: black;
-  background-color:#fff;
+  background-color:#ecf0f1;
 }
 ol, ul {
   list-style: square;
@@ -111,7 +111,7 @@ img {
 float: left;
 border-right:5px solid rgba(0,0,0,0.3);
 width: 20%;
-background: #ddd;
+background: #95a5a6;
     position:absolute;
 height: 100%;
 }
@@ -283,11 +283,9 @@ font-size:20px;
 
 /* About Me */
 #AboutMe{
-width:90%;
-
-  margin-left:20px;
-  margin-top:20px;
-    overflow: hidden;
+max-width: 600px;
+margin:30px auto 0;
+overflow: hidden;
 }
 
 
@@ -295,7 +293,8 @@ width:90%;
 font-size:18px;
 font-weight: 500;
 line-height:120%;
-    text-align:left;
+margin-left:10px;
+text-align:left;
 
 }
 
@@ -318,7 +317,7 @@ line-height:120%;
   width: 175px;
   margin: 8px;
   display: inline-block;
-  border: 3px solid #ddd;
+  border: 3px solid #bdc3c7;
   border-radius:40px;
   cursor:pointer;
 }
@@ -344,7 +343,7 @@ line-height:120%;
 
 .back-text{
   text-align:center;
-  color:#ddd;
+  color:#bdc3c7;
   margin: 10px 10px 0px 10px;
   font-weight: 500;
 }
@@ -371,9 +370,61 @@ color:black;
 padding: 10px 10px 0px 10px;
 box-sizing: border-box;
 -moz-box-sizing: border-box;
-background-color: #ddd;
+background-color: #bdc3c7;
 }
 
+/* Work Modals */
+.popup {
+position: relative;
+top: 50%;
+bottom: 0;
+height: auto;
+margin:auto;
+
+-webkit-transform: translateY(-500%);
+-ms-transform: translateY(-500%);
+transform: translateY(-500%);
+color: #333333;
+width: 60%%;
+z-index: 10;
+display: none;
+}
+
+.popup-content{
+  margin-bottom: 20px;
+background-color: #fff;
+border: 1px solid transparent;
+-webkit-border-radius: 10px;
+-moz-border-radius: 10px;
+border-radius: 10px;
+-webkit-box-shadow: 0 1px 1px rgba(0,0,0,.05);
+box-shadow: 0 1px 1px rgba(0,0,0,.05);
+
+}
+.popup-heading{
+-webkit-border-top-left-radius: 3px;
+-webkit-border-top-right-radius: 3px;
+-moz-border-radius-topleft:3px;
+-moz-border-radius-topright:3px;
+border-top-left-radius: 3px;
+border-top-right-radius: 3px;
+padding: 10px 15px;
+  color: #fff;
+background-color: #bdc3c7;
+border-color: #bdc3c7;
+}
+
+.popup-title {
+margin-top: 0;
+margin-bottom: 0;
+font-size: 16px;
+color: inherit;
+text-align:center;
+}
+
+.popup-body{
+  padding:5px;
+}
 
 
 /* Contact Page and Form */
