@@ -1,15 +1,17 @@
 <!--
 $(document).mouseup(function (e)
 {
+    console.log(e.target);
+    var cancel = $(".fa.fa-times-circle.fa-lg")
     var container = [$("#recipeboxpopup"),
                     $("#seatsidepopup"),
                     $("#hsresortpopup"),
                     $("#scdmpopup"),
-                    $("#smlpopup")];
-
+                      $("#smlpopup")];
     for(var i = 0;i<container.length;i++){
-    if (!container[i].is(e.target) // if the target of the click isn't the container...
+    if ((!container[i].is(e.target) // if the target of the click isn't the container...
         && container[i].has(e.target).length === 0) // ... nor a descendant of the container
+        || cancel.is(e.target))
     {
         container[i].fadeOut();
     }
@@ -36,6 +38,14 @@ $(document).ready(function() {
     $("#sml").click(function(){
         $("#smlpopup").fadeIn();
     });
+
+$('.navbar-nav a').click(function(e){
+  e.preventDefault();
+  var id = $(this).attr('href');
+  $(document.body).animate({
+      'scrollTop':   $(id).offset().top
+  }, 500);
+})
 
 
 

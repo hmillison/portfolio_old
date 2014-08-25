@@ -1,261 +1,173 @@
-
 <!DOCTYPE html>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<head>
-  <title>Henry Millison</title>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
 
 
-  <!-- Mobil optimazation -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <script src="http://code.jquery.com/jquery-latest.min.js"
+        type="text/javascript"></script>
+        <script src="js/main.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-  <script src="./js/main.js" type="text/javascript"></script>
-  <script src="./js/bootstrap.min.js" type="text/javascript"></script>
+    <div class="navbar navbar-default navbar-static-top navbar-fixed-top" role="navigation">
+      <img class="expandOpen" src="./images/hm-logo.png" alt="Picture" width="140">
 
-  <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="./css/style.css" type="text/css" media="all">
-  <link rel="stylesheet" href="./css/mobile.css" type="text/css" media="all">
-
-
-  <!--[if lt IE 9 ]><link rel="stylesheet" href="./css/720_grid.css" type="text/css"><![endif]-->
-</head>
-
-<body>
-
-
-<div class="row">
-  <div id="site_wrapper">
-  <div id="header">
-      <div id = "picture">
-            <a href="#display" onclick="javascript:unhide('more');"><img class="expandOpen" src="./images/topcirc.png" alt="Picture" width="140"></a>
-      <br>
+        <div class="navbar-collapse collapse navbar-right">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#about"> About </a>
+                </li>
+                <li>
+                    <a href="#experience">Experience</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container-fluid">
+    <div class="row" id="about">
+      <div class="col-md-12 green text-center" >
+        <div class="content-container">
+          <h1>Henry Millison</h1>
+          <h3>Full Stack Web Developer</h3>
+          <img class="expandOpen" src="./images/topcirc.png" alt="Picture" width="140">
+          <p>I am a 21 year-old studying Informatics at the University of Michigan. This interdisciplinary major between the
+            the College of Engineering, Department of Statistics and School of Information combines a study of human computer interaction,
+            big data analysis, and software development. <br /><br />
+            Through my studies and work experience, I cultivated my programming skills together with an understanding
+            of how users interpret and understand what I create.<br /><br />
+            I aspire to design and develop things that change people's lives in a positive way, whether it is
+            making a mundane task easier or completely revolutionizing the way technology is involved in our lives.
+          </p>
+        </div>
       </div>
-      <div class="title">
-              <h3>Henry Millison</h3>
-              <br />
-	  </div>
-
-
-<div id ='cssmenu'>
-<ul>
-    <li>
-    <a href="#" title="More About Me" onclick="javascript:unhide('AboutMe'); "><span><strong>About</strong></span></a>
-    </li>
-    <li>
-    <a href="#" onclick="javascript:unhide('Work');"><span><strong>Experience</strong></span></a>
-    </li>
-    <li>
-    <a href="#" onclick="javascript:unhide('Contact');"><span><strong>Contact</strong></span></a>
-    </li>
-</ul>
-</div>
-  <div class="social_media">
-              <a href="/henrymillison_resume.pdf" target="_blank">  <i class="fa fa-file-text fa-lg">	</i></a>
-              <a href="http://www.linkedin.com/in/hmillison/" target="_blank">  <i class="fa fa-linkedin fa-lg">	</i></a>
-              <a href="https://github.com/hmillison/" target="_blank">  <i class="fa fa-github-square fa-lg">	</i></a>
-              <a href="https://codepen.io/hmillison/" target="_blank">  <i class="fa fa-codepen fa-lg">	</i></a>
-
+    </div>
+    <div class="row" id="experience">
+      <div class="col-md-12 white text-center" >
+        <div class="content-container">
+          <h1>Experience</h1>
+          <div class="grid">
+            <div class="item" id="recipebox">
+              <div class="front">
+                <div class="image">
+                  <img src="./images/work-recipebox.png" alt="...">
+                </div>
+              </div>
+              <div class="back">
+                <div class="back-text">
+                  Recipe Box <br>
+                  recipe management web application<br>
+                  Launched August 2014
+                </div>
+              </div>
             </div>
-</div>
-<div class = "main">
-<div id="intro"></div>
-<div id="more" class="hidden">
-        <br />
-        <br />
-        <br />
-        <br />
-    </div>
-<div id="AboutMe">
-<p>I am a 21 year-old studying Informatics at the University of Michigan. This interdisciplinary major between the
-the College of Engineering, Department of Statistics and School of Information combines a study of human computer interaction,
-big data analysis, and software development. <br /><br />
-Through my studies and work experience, I cultivated my programming skills together with an understanding
-of how users interpret and understand what I create.<br /><br />
-I aspire to design and develop things that change people's lives in a positive way, whether it is
-making a mundane task easier or completely revolutionizing the way technology is involved in our lives.
-</p>
-</div>
-<div id="Work" class="hidden">
-
-<div class="grid">
-
-  <div class="item" id="recipebox">
-    <div class="front">
-      <div class="image">
-        <img src="./images/work-recipebox.png" alt="...">
-      </div>
-    </div>
-    <div class="back">
-      <div class="back-text">
-        <br>
-        Recipe Box <br>
-        recipe management web application<br>
-        Launched August 2014
-      </div>
-    </div>
-  </div>
-  <div class="item" id="seatside">
-    <div class="front">
-      <div class="image">
-        <img src="./images/work-sss.png" alt="...">
-      </div>
-    </div>
-    <div class="back">
-      <div class="back-text">
-        <br>
-        Seat Side Service <br>
-        Software Development Intern <br>
-        May 2014 - Present
-      </div>
-    </div>
-  </div>
-  <div class="item" id="hsresort">
-    <div class="front">
-      <div class="image">
-        <img src="./images/work-highlandsprings.png" alt="...">
-      </div>
-    </div>
-    <div class="back">
-      <div class="back-text">
-        <br>
-        Highland Springs Resort <br>
-        Website Usability Study<br>
-        April 2014
-      </div>
-    </div>
-  </div>
-  <div class="item" id="scdm">
-    <div class="front">
-      <div class="image">
-        <img src="./images/work-scdm.gif" alt="...">
-      </div>
-    </div>
-    <div class="back">
-      <div class="back-text">
-        SCDM <br>
-        Project Management Intern <br>
-        June 2013 - July 2013
-      </div>
-    </div>
-  </div>
-  <div class="item" id="sml">
-    <div class="front">
-      <div class="image">
-        <img src="./images/work-sml.gif" alt="...">
-      </div>
-    </div>
-    <div class="back">
-      <div class="back-text">
-        Social Media Link <br>
-        Web Production Intern <br>
-        May 2012 - August 2012
-      </div>
-    </div>
-  </div>
-</div>
-<div class="popup" id="recipeboxpopup">
-    <div class="popup-content">
-        <div class="popup-heading">
-            <div class="popup-title">
-                Recipe Box
+            <div class="item" id="seatside">
+              <div class="front">
+                <div class="image">
+                  <img src="./images/work-sss.png" alt="...">
+                </div>
+              </div>
+              <div class="back">
+                <div class="back-text">
+                  Seat Side Service <br>
+                  Software Development Intern <br>
+                  May 2014 - Present
+                </div>
+              </div>
+            </div>
+            <div class="item" id="hsresort">
+              <div class="front">
+                <div class="image">
+                  <img src="./images/work-highlandsprings.png" alt="...">
+                </div>
+              </div>
+              <div class="back">
+                <div class="back-text">
+                  Highland Springs Resort <br>
+                  Website Usability Study<br>
+                  April 2014
+                </div>
+              </div>
+            </div>
+            <div class="item" id="scdm">
+              <div class="front">
+                <div class="image">
+                  <img src="./images/work-scdm.gif" alt="...">
+                </div>
+              </div>
+              <div class="back">
+                <div class="back-text">
+                  SCDM <br>
+                  Project Management Intern <br>
+                  June 2013 - July 2013
+                </div>
+              </div>
+            </div>
+            <div class="item" id="sml">
+              <div class="front">
+                <div class="image">
+                  <img src="./images/work-sml.gif" alt="...">
+                </div>
+              </div>
+              <div class="back">
+                <div class="back-text">
+                  Social Media Link <br>
+                  Web Production Intern <br>
+                  May 2012 - August 2012
+                </div>
+              </div>
             </div>
         </div>
-        <div class="popup-body">
-            this is a project i did
+      </div>
+    </div>
+		</div>
+    <div class="row" id="contact">
+      <div class="col-md-12 blue text-center" >
+
+        <div class="content-container">
+          <h3>Get in touch, for any inquiries or if you just want to say hello!</h3>
+          <h4>hmillison AT gmail DOT COM</h4>
+          <div class="socialmedia">
+            <a href="/henrymillison_resume.pdf" target="_blank">  <i class="fa fa-file-text fa-3x">	</i></a>
+            <a href="http://www.linkedin.com/in/hmillison/" target="_blank">  <i class="fa fa-linkedin fa-3x">	</i></a>
+            <a href="https://github.com/hmillison/" target="_blank">  <i class="fa fa-github-square fa-3x">	</i></a>
+            <a href="https://codepen.io/hmillison/" target="_blank">  <i class="fa fa-codepen fa-3x">	</i></a>
+          </div>
         </div>
+      </div>
+    </div>
   </div>
-</div>
-<div class="popup" id="seatsidepopup">
-    <div class="popup-content">
-        <div class="popup-heading">
-            <div class="popup-title">
-                Seat Side Service
-            </div>
-        </div>
-        <div class="popup-body">
-            this is a project i did
-        </div>
-  </div>
-</div>
-<div class="popup" id="hsresortpopup">
-    <div class="popup-content">
-        <div class="popup-heading">
-            <div class="popup-title">
-                HS Resorts
-            </div>
-        </div>
-        <div class="popup-body">
-            this is a project i did
-        </div>
-  </div>
-</div>
-<div class="popup" id="scdmpopup">
-    <div class="popup-content">
-        <div class="popup-heading">
-            <div class="popup-title">
-                SCDM
-            </div>
-        </div>
-        <div class="popup-body">
-            this is a project i did
-        </div>
-  </div>
-</div>
-<div class="popup" id="smlpopup">
-    <div class="popup-content">
-        <div class="popup-heading">
-            <div class="popup-title">
-                Recipe Box
-            </div>
-        </div>
-        <div class="popup-body">
-            this is a project i did
-        </div>
-  </div>
-</div>
-</div>
-<div id="Contact" class="hidden">
-<div id="contact-form" class="clearfix">
-    <h3>Get in touch!</h3>
-    <fieldset id="contact_form">
-    <div id="result"></div>
-       <label for="name">Name: <span class="required">*</span></label>
-    <input type="text" id="name" name="name"  placeholder="John Doe" required="required" autofocus="autofocus" />
 
-    <label for="email">Email Address: <span class="required">*</span></label>
-    <input type="email" id="email" name="email"  placeholder="johndoe@example.com" required="required" />
-
-    <label for="telephone">Telephone: </label>
-    <input type="tel" id="phone" name="phone" />
-
-    <label for="message">Message: <span class="required">*</span></label>
-    <textarea id="message" name="message" placeholder="Your message must have greater than 10 characters" required="required" data-minlength="10"></textarea>
-     <label>
-    <button id="submit_button">Send Away</button>
-    </label>
-
-    </fieldset>
-</div>
-</div>
-</div>
-<div id="Portfolio" class="hidden">
-<p>Portfolio section coming soon...
-</p>
-</div>
-
-</div>
-</div>
-</div>
-
-
-
-        <br>
-        <br>
-        <br>
-        <br>
-
-
-
-
-
-</body></html>
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script>
+    </body>
+    <script>
+    </script>
+</html>
