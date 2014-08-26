@@ -6,20 +6,26 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <title>Henry Millison</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+                <link rel="stylesheet" href="./font-awesome/css/font-awesome.min.css">
+
+	       <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
 
+  <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
 
         <script src="http://code.jquery.com/jquery-latest.min.js"
         type="text/javascript"></script>
+        <script src="js/skrollr.min.js"></script>
         <script src="js/main.js"></script>
     </head>
     <body>
@@ -27,13 +33,15 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-    <div class="navbar navbar-default navbar-static-top navbar-fixed-top" role="navigation">
-      <img class="expandOpen" src="./images/hm-logo.png" alt="Picture" width="140">
-
-        <div class="navbar-collapse collapse navbar-right">
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+      <img src="./images/hm-logo-2.png" alt="Picture" width="140">
+      <div class="navbar-collapse collapse navbar-right">
             <ul class="nav navbar-nav">
                 <li>
                     <a href="#about"> About </a>
+                </li>
+                <li>
+                    <a href="#skills">Skills</a>
                 </li>
                 <li>
                     <a href="#experience">Experience</a>
@@ -46,11 +54,13 @@
     </div>
     <div class="container-fluid">
     <div class="row" id="about">
-      <div class="col-md-12 green text-center" >
-        <div class="content-container">
+      <div class="col-md-12 blue text-center" >
+        <div class="content-container"
+              >
           <h1>Henry Millison</h1>
-          <h3>Full Stack Web Developer</h3>
-          <img class="expandOpen" src="./images/topcirc.png" alt="Picture" width="140">
+          <h4>Software Developer</h4>
+          <h4>UX Designer</h4>
+          <img class="faceshot" src="./images/topcirc.png" alt="Picture" width="140">
           <p>I am a 21 year-old studying Informatics at the University of Michigan. This interdisciplinary major between the
             the College of Engineering, Department of Statistics and School of Information combines a study of human computer interaction,
             big data analysis, and software development. <br /><br />
@@ -62,79 +72,185 @@
         </div>
       </div>
     </div>
-    <div class="row" id="experience">
-      <div class="col-md-12 white text-center" >
-        <div class="content-container">
-          <h1>Experience</h1>
-          <div class="grid">
-            <div class="item" id="recipebox">
-              <div class="front">
-                <div class="image">
-                  <img src="./images/work-recipebox.png" alt="...">
+    <div class="row darkblue" id="skills">
+      <div class="content-container text-center">
+        <h1>Skills</h1>
+      <div class="col-md-6 text-center vertical-center" >
+          <div class="info">
+            <h3>Front End</h4>
+              <i class="fa fa-photo fa-4x">	</i>
+              <p>
+                  I have experience with every step of the design process. Starting
+                  with usability research and designing interfaces that ensure
+                  the best user experience to implementing specifications while
+                  following best practices.
+              </p>
+          </div>
+        </div>
+      <div class="col-md-6 text-center vertical-center" >
+          <div class="info">
+            <h3>Back End</h4>
+              <i class="fa fa-code fa-4x">	</i>
+              <p>
+                I can build fully featured, scalable web applications using
+                PHP (CakePHP) and Node.JS (Express). My developed applications
+                include professional and personal projects. I am always
+                looking for the next API or web technology to hack on.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="row" id="experience">
+        <div class="col-md-12 white text-center" >
+          <div class="content-container">
+            <h1>Experience</h1>
+            <div class="grid">
+              <div class="item" id="recipebox">
+                <div class="front">
+                  <div class="image">
+                    <img src="./images/work-recipebox.png" alt="...">
+                  </div>
+                </div>
+                <div class="back">
+                  <div class="back-text">
+                    Recipe Box <br>
+                    <i class="fa fa-minus">	</i>
+                    Web Recipe Manager<br>
+                    <i class="fa fa-minus">	</i>
+                    Launched August 2014
+                  </div>
                 </div>
               </div>
-              <div class="back">
-                <div class="back-text">
-                  Recipe Box <br>
-                  recipe management web application<br>
-                  Launched August 2014
+              <div class="item" id="seatside">
+                <div class="front">
+                  <div class="image">
+                    <img src="./images/work-sss.png" alt="...">
+                  </div>
                 </div>
+                <div class="back">
+                  <div class="back-text">
+                    Seat Side Service <br>
+                    <i class="fa fa-minus">	</i>
+                    Software Development Intern <br>
+                    <i class="fa fa-minus">	</i>
+                    May 2014 - Present
+                  </div>
+                </div>
+              </div>
+              <div class="item" id="hsresort">
+                <div class="front">
+                  <div class="image">
+                    <img src="./images/work-highlandsprings.png" alt="...">
+                  </div>
+                </div>
+                <div class="back">
+                  <div class="back-text">
+                    Highland Springs Resort <br>
+                    <i class="fa fa-minus">	</i>
+                    Website Usability Study<br>
+                    <i class="fa fa-minus">	</i>
+                    April 2014
+                  </div>
+                </div>
+              </div>
+              <div class="item" id="scdm">
+                <div class="front">
+                  <div class="image">
+                    <img src="./images/work-scdm.gif" alt="...">
+                  </div>
+                </div>
+                <div class="back">
+                  <div class="back-text">
+                    SCDM <br>
+                    <i class="fa fa-minus">	</i>
+                    Project Management Intern <br>
+                    <i class="fa fa-minus">	</i>
+                    June 2013 - July 2013
+                  </div>
+                </div>
+              </div>
+              <div class="item" id="sml">
+                <div class="front">
+                  <div class="image">
+                    <img src="./images/work-sml.gif" alt="...">
+                  </div>
+                </div>
+                <div class="back">
+                  <div class="back-text">
+                    Social Media Link <br>
+                    <i class="fa fa-minus">	</i>
+                    Web Production Intern <br>
+                    <i class="fa fa-minus">	</i>
+                    May 2012 - August 2012
+                  </div>
+                </div>
+              </div>
+              <div class="popup" id="recipeboxpopup">
+                  <div class="popup-content">
+                      <div class="popup-heading">
+                          <div class="popup-title">
+                              Recipe Box
+                              <i class="fa fa-times-circle fa-lg">	</i>
+
+                          </div>
+                        </div>
+                      <div class="popup-body">
+                          this is a project i did
+                        </div>
+                  </div>
+            </div>
+            <div class="popup" id="seatsidepopup">
+                <div class="popup-content">
+                    <div class="popup-heading">
+                        <div class="popup-title">
+                            Seat Side Service
+                            <i class="fa fa-times-circle fa-lg">	</i>
+                        </div>
+                    </div>
+                    <div class="popup-body">
+                        this is a project i did
+                    </div>
               </div>
             </div>
-            <div class="item" id="seatside">
-              <div class="front">
-                <div class="image">
-                  <img src="./images/work-sss.png" alt="...">
-                </div>
-              </div>
-              <div class="back">
-                <div class="back-text">
-                  Seat Side Service <br>
-                  Software Development Intern <br>
-                  May 2014 - Present
-                </div>
-              </div>
-            </div>
-            <div class="item" id="hsresort">
-              <div class="front">
-                <div class="image">
-                  <img src="./images/work-highlandsprings.png" alt="...">
-                </div>
-              </div>
-              <div class="back">
-                <div class="back-text">
-                  Highland Springs Resort <br>
-                  Website Usability Study<br>
-                  April 2014
-                </div>
+            <div class="popup" id="hsresortpopup">
+                <div class="popup-content">
+                    <div class="popup-heading">
+                        <div class="popup-title">
+                            HS Resorts
+                            <i class="fa fa-times-circle fa-lg">	</i>
+
+                        </div>
+                    </div>
+                    <div class="popup-body">
+                        this is a project i did
+                    </div>
               </div>
             </div>
-            <div class="item" id="scdm">
-              <div class="front">
-                <div class="image">
-                  <img src="./images/work-scdm.gif" alt="...">
-                </div>
-              </div>
-              <div class="back">
-                <div class="back-text">
-                  SCDM <br>
-                  Project Management Intern <br>
-                  June 2013 - July 2013
-                </div>
+            <div class="popup" id="scdmpopup">
+                <div class="popup-content">
+                    <div class="popup-heading">
+                        <div class="popup-title">
+                            SCDM
+                            <i class="fa fa-times-circle fa-lg">	</i>
+                        </div>
+                    </div>
+                    <div class="popup-body">
+                        this is a project i did
+                    </div>
               </div>
             </div>
-            <div class="item" id="sml">
-              <div class="front">
-                <div class="image">
-                  <img src="./images/work-sml.gif" alt="...">
-                </div>
-              </div>
-              <div class="back">
-                <div class="back-text">
-                  Social Media Link <br>
-                  Web Production Intern <br>
-                  May 2012 - August 2012
-                </div>
+            <div class="popup" id="smlpopup">
+                <div class="popup-content">
+                    <div class="popup-heading">
+                        <div class="popup-title">
+                            Social Media Link
+                            <i class="fa fa-times-circle fa-lg">	</i>
+                        </div>
+                    </div>
+                    <div class="popup-body">
+                        this is a project i did
+                    </div>
               </div>
             </div>
         </div>

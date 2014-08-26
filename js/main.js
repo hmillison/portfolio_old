@@ -1,4 +1,5 @@
 <!--
+
 $(document).mouseup(function (e)
 {
     console.log(e.target);
@@ -19,7 +20,7 @@ $(document).mouseup(function (e)
 });
 
 $(document).ready(function() {
-    $("#recipebox").click(function(){
+    /*$("#recipebox").click(function(){
         $("#recipeboxpopup").fadeIn();
     });
 
@@ -37,7 +38,7 @@ $(document).ready(function() {
 
     $("#sml").click(function(){
         $("#smlpopup").fadeIn();
-    });
+    });*/
 
 $('.navbar-nav a').click(function(e){
   e.preventDefault();
