@@ -144,9 +144,12 @@ border-bottom: 2px solid rgba(0,0,0,0.5);
 }
 
 .content-container{
-  min-height: 640px;
   padding: 5%;
   padding-top:1%;
+}
+
+.content-container#experience{
+  max-height: 500px;
 }
 
 #about, #contact, #skills{
@@ -288,7 +291,7 @@ max-width: 100%;
 .back-text{
   text-align:center;
   color:#bdc3c7;
-  margin: 10px 10px 0px 10px;
+  margin: 10% 10px 0px 10px;
   font-weight: 500;
 }
 
@@ -326,21 +329,26 @@ top: 50%;
 bottom: 0;
 height: auto;
 margin:auto;
--webkit-transform: translateY(-350%);
--ms-transform: translateY(-350%);
-transform: translateY(-350%);
+-webkit-transform: translateY(-95%);
+-ms-transform: translateY(-95%);
+transform: translateY(-95%);
 color: #333333;
 font-weight:500;
-width: 100%;
+width: 40%;
 z-index: 10;
 display: none;
 }
 
-.fa.fa-times-circle.fa-lg{
+.popup .fa.fa-times-circle.fa-lg{
   float:right;
+  color:#000;
 }
 
-.fa.fa-times-circle.fa-lg:hover{
+.popup .fa-arrow-circle-right, .popup .fa-arrow-circle-left{
+  color: #000;
+}
+
+.fa.fa-times-circle.fa-lg:hover, .fa-arrow-circle-right:hover, .fa-arrow-circle-left:hover{
   color:#ddd;
   cursor:pointer;
 }
@@ -369,10 +377,8 @@ text-align:center;
 }
 
 .popup-body{
-  padding:5px;
+  padding:5%;
 }
-
-
 
 
 

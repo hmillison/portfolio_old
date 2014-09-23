@@ -20,25 +20,25 @@ $(document).mouseup(function (e)
 });
 
 $(document).ready(function() {
-    /*$("#recipebox").click(function(){
-        $("#recipeboxpopup").fadeIn();
-    });
+    // $("#recipebox").click(function(){
+    //     $("#recipeboxpopup").fadeIn();
+    // });
 
-    $("#seatside").click(function(){
-        $("#seatsidepopup").fadeIn();
-    });
+    // $("#seatside").click(function(){
+    //     $("#seatsidepopup").fadeIn();
+    // });
 
-    $("#hsresort").click(function(){
-        $("#hsresortpopup").fadeIn();
-    });
+    // $("#hsresort").click(function(){
+    //     $("#hsresortpopup").fadeIn();
+    // });
 
-    $("#scdm").click(function(){
-        $("#scdmpopup").fadeIn();
-    });
+    // $("#scdm").click(function(){
+    //     $("#scdmpopup").fadeIn();
+    // });
 
-    $("#sml").click(function(){
-        $("#smlpopup").fadeIn();
-    });*/
+    // $("#sml").click(function(){
+    //     $("#smlpopup").fadeIn();
+    // });
 
 $('.navbar-nav a').click(function(e){
   e.preventDefault();
