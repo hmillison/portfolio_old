@@ -321,6 +321,17 @@ box-sizing: border-box;
 background-color: #bdc3c7;
 }
 
+.owl-carousel img{
+  width:175px;
+  height:auto;
+}
+
+.row .owl{
+  width:50%;
+  margin:auto;
+  padding:1%;
+}
+
 
 /* popups */
 .popup {
